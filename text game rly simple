@@ -1,0 +1,39 @@
+#A TEXT GAME OR SOMETHING
+print("Hi and Welcome to this text based game! Please put your Age And Name")
+age = float(input("Enter your Age: "))
+name = input("Enter your Name: ")
+
+
+print("You Will be starting with 10 hp")
+print("If your hp becomes 0 you lose")
+
+
+print("You wake up in a forest, you don't remember anything")
+print("You see a house but theres a lake")
+answer = input("Swim or go Around (Swim/Around): ")
+
+if answer == "Swim":
+    print("You make it but you lose 5hp")
+elif answer == "Around":
+    print("You walk the path and get to the house safely")
+
+answer = input("Do you want to enter the house or walk towards a path (House/Path): ")
+if answer == "House":
+     print("You Enter the House, but you trip losing 3hp")
+     print("The Owner of the house seems to be back")
+     answer = input("Do you wish to get out by (Door/Window): ")
+if answer == "Door":
+    print("That was a bad choice the owner found you and killed you")
+elif answer == "Window":
+    print("You make a huge noise and get killed by the owner")
+elif answer == "Path":
+     answer = input("While walking you get surrounded by dogs do you wish to (Run/Defend): ")
+
+if answer == "Run":
+    print("Wolves catch up to you and you get killed")
+elif answer == "Defend":
+    print("You throw a few rocks and the wolves get scared")
+    print("You find a village and you get instructions on how to reach the nearest city")
+
+
+
